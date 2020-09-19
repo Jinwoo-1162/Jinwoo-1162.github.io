@@ -38,7 +38,6 @@ header .logo a {
     height: 80px;
     text-indent: -99999999px;
     width: 200px
-    
 }
 
 body {
@@ -100,6 +99,14 @@ footer {
 }
 
 .buttons input {
+    background: black;
+    color: white;
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+input.submitProtest {
     background: black;
     color: white;
     height: 30px;
