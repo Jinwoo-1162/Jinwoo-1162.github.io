@@ -36,28 +36,40 @@
             <br>
             <div style = "font-size: 25px">START A MOVEMENT</div>
             <div style = "border: 1px solid black;margin: 0% 25% 0% 25%;"></div><br>
-            <div>If you've found an issue worth fighting for, this is the place to be.</div><br>
+            <div>If you've found an issue worth fighting for, this is the place to be. Just answer these four simple questions.</div><br>
         </section>
+
+        <div id='alert' style="color:red; text-align: center;"> </div>
 
         <section class="inputs" style="margin-left: 100px; display: inline-flex;">
             <div>
                 <div style="display: inline-flex; flex-direction: row;">
                     <div>
                         <ul style="display: flex; flex-direction: column;">
-                            <li>Name of protest: <br><input type="text" style="width: 300px"></li>
-                            <li>Location: <br><input type="text" style="width: 300px"></li>
-                            <li>Date: <br><input type="text" style="width: 300px"></li>
+                            <li>Name of protest: <br><input id='name' type="text" style="width: 300px"></li>
+                            <li>Location (College, City, State): <br><input id='location' type="text" style="width: 300px"></li>
+                            <li>Date (xx:xx am/pm, xx/xx/xxxx): <br><input id='date' type="text" style="width: 300px"></li>
                         </ul>
                     </div>
-                    
                 </div>
-                <div class= "description">Description: <br><input type="text" style="width: 400px; height: 200px; text-;"></div><br>
-                <input class= "submitProtest" type="submit" value="Submit" ><br><br>
+                <div>Description: <br><textarea name="" id="description" cols="30" rows="10"></textarea></div><br>
+                <input id= "submitProtest" type="submit" value="Submit" ><br><br>
             </div>
             <div>&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;</div>
-            <div class="uploadImg">Image to represent movement: <br><input type="button" value="Upload an Image" style="width: 300px; 
-                height: 200px; background: rgb(41, 41, 41); color: white; border-radius: 10px;"></div>
+            <br><br><div style="display: flex; flex-direction: column;">Preview:
+                <div id='preview' style="border: 1px solid black; height: 350px; width: 400px; text-align: center;">
+                Join the Cause!<div style = "border: 1px solid black;margin: 0% 25% 0% 25%;"></div><br>
+                <ul>
+                    <li id='what'><em>- What: </em><div id='what-text'></div></li><br><br>
+                    <li id='where'><em>- Where: </em><div id='where-text'></div></li><br><br>
+                    <li id='when'><em>- When: </em><div id='when-text'></div></li><br><br>
+                    <li id='why'><em>- Why: </em><div id='why-text'></div></li><br><br>
+                </ul></div>
+                <input id= "previewProtest" 
+                type="submit" value="Click to see preview" style="background: black; color: white;">
+            </div>
         </section>
-        <footer>By JP and JZ &emsp;Sept. 2020<br><a href="https://www.paypal.com/paypalme/JPark1162">Donate</a></footer>        
+        <footer>By JP and JZ &emsp;Sept. 2020<br><a href="https://www.paypal.com/paypalme/JPark1162">Donate</a></footer>
+        <script src="scripts/startpage.js"></script>
     </body>
 </html>
